@@ -18,7 +18,9 @@ main {
   align-items: center;
   color: #fff;
   overflow: hidden;
+  flex-wrap: wrap;
 }
+
 button {
   color: #fff;
   padding: 15px 30px;

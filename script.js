@@ -17,6 +17,8 @@ const arr = [
 
 btn.addEventListener("click", () => {
   const ele = document.createElement("div");
+  const x = Math.random() * 90;
+  const y = Math.random() * 80;
   const rot = Math.random() * 360;
 
   ele.style.width = "100px";
@@ -28,8 +30,8 @@ btn.addEventListener("click", () => {
   ele.style.rotate = `${rot}deg`;
 
   ele.style.position = "absolute";
-  ele.style.top = `${Math.random() * (window.innerHeight - 100)}px`;
-  ele.style.left = `${Math.random() * (window.innerWidth - 100)}px`;
+  ele.style.top = `${y}%`;
+  ele.style.left = `${x}%`;
 
   main.appendChild(ele);
 });
